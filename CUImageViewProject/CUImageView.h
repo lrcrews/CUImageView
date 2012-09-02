@@ -26,7 +26,7 @@
 
 - (id)initWithImageURL:(NSURL *)url;
 
-- (void)cancelDownloading;  // If your view scrolls off screen, it's super view enters a reuse queue, the page it's on is being poped from the navigation controller, etc., etc., whatever case no longer requires this image to be downloaded please be kind to your user's time and data plan.  Cancel your download.
+- (void)cancelDownload;  // If your view scrolls off screen, it's super view enters a reuse queue, the page it's on is being poped from the navigation controller, etc., etc., whatever case no longer requires this image to be downloaded please be kind to your user's time and data plan.  Cancel your download.
 
 
 @end

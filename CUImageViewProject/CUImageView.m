@@ -71,7 +71,7 @@ static UIImage * loadingBackground = nil;
 #pragma mark -
 #pragma mark Canceleering
 
-- (void)cancelDownloading;
+- (void)cancelDownload;
 {
     if (urlConnection_)
     {
