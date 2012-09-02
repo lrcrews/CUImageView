@@ -12,9 +12,15 @@ How's this used?
 ----------------
 
 The project shows two examples, a nib file usage and a pure code usage.  The gist of the usage being you either call:
-    CUImageView * myImageView = [[CUImageView alloc] initWithImageURL:[NSURL URLWithString:@"myImageURL"]];
+```objective-c
+CUImageView * myImageView = [[CUImageView alloc] initWithImageURL:[NSURL URLWithString:@"myImageURL"]];
+```
+
 
 OR
-    [_myImageView setImageURL:[NSURL URLWithString:@"myImageURL"]];
+
+```objective-c
+[_myImageView setImageURL:[NSURL URLWithString:@"myImageURL"]];
+```
 
 That's it.  There's also a "cancelDownload" method present should you find yourself in a situation where you no longer desire the image view to download the image.  All other UIImageView methods and properties exist and function as expected, with a slight exception for setBackgroundColor:, which will only set the background color if the image view is not currently loading an image (otherwise it waits until the loading is complete [or fails] to update the background color).
