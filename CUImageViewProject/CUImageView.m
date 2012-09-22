@@ -59,7 +59,7 @@
 #pragma mark -
 #pragma mark Canceleering
 
-- (void)cancelDownloading;
+- (void)cancelDownload;
 {
     if (urlConnection_)
     {
@@ -131,8 +131,6 @@
 {
     if (_loadingIndicator == nil)
     {
-        // You may want to update the style based on the loading image you used.
-        
         _loadingIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
         [_loadingIndicator setHidesWhenStopped:YES];
     }
