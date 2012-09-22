@@ -43,18 +43,6 @@
 }
 
 
-static UIImage * loadingBackground = nil;
-
-
-+ (void)initialize
-{
-    if (self == [CUImageView class])
-    {
-        loadingBackground = [UIImage imageNamed:@"LoadingBackground.png"];  // You should likely replace this with a patterned image more befitting your app.
-    }
-}
-
-
 - (id)initWithImageURL:(NSURL *)url;
 {
     self = [super init];
@@ -71,7 +59,7 @@ static UIImage * loadingBackground = nil;
 #pragma mark -
 #pragma mark Canceleering
 
-- (void)cancelDownload;
+- (void)cancelDownloading;
 {
     if (urlConnection_)
     {
@@ -117,7 +105,8 @@ static UIImage * loadingBackground = nil;
         
         originalBackgroundColor_ = [self backgroundColor];
         
-        [self setBackgroundColor:[UIColor colorWithPatternImage:loadingBackground]];
+        [self setAlpha:0.66f];
+        [self setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
         [self.loadingIndicator startAnimating];
         
         
@@ -180,6 +169,7 @@ static UIImage * loadingBackground = nil;
     
     [self.loadingIndicator stopAnimating];
     [self setBackgroundColor:originalBackgroundColor_];
+    [self setAlpha:1.0f];
     
     // Perhaps you'd like to set a defualt image here?
 }
@@ -191,6 +181,7 @@ static UIImage * loadingBackground = nil;
     
     [self.loadingIndicator stopAnimating];
     [self setBackgroundColor:originalBackgroundColor_];
+    [self setAlpha:1.0f];
     
     [self setImage:[[UIImage alloc] initWithData:[self responseData]]];
     

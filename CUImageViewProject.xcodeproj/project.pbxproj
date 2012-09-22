@@ -17,8 +17,6 @@
 		ED972C2A15F2D06E006C8165 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED972C2815F2D06E006C8165 /* ViewController_iPhone.xib */; };
 		ED972C2D15F2D06E006C8165 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED972C2B15F2D06E006C8165 /* ViewController_iPad.xib */; };
 		ED972C3715F2D0A0006C8165 /* CUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED972C3415F2D0A0006C8165 /* CUImageView.m */; };
-		ED972C3815F2D0A0006C8165 /* LoadingBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = ED972C3515F2D0A0006C8165 /* LoadingBackground.png */; };
-		ED972C3915F2D0A0006C8165 /* LoadingBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED972C3615F2D0A0006C8165 /* LoadingBackground@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +36,6 @@
 		ED972C2C15F2D06E006C8165 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		ED972C3315F2D0A0006C8165 /* CUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUImageView.h; sourceTree = "<group>"; };
 		ED972C3415F2D0A0006C8165 /* CUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUImageView.m; sourceTree = "<group>"; };
-		ED972C3515F2D0A0006C8165 /* LoadingBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingBackground.png; sourceTree = "<group>"; };
-		ED972C3615F2D0A0006C8165 /* LoadingBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadingBackground@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +110,6 @@
 			children = (
 				ED972C3315F2D0A0006C8165 /* CUImageView.h */,
 				ED972C3415F2D0A0006C8165 /* CUImageView.m */,
-				ED972C3515F2D0A0006C8165 /* LoadingBackground.png */,
-				ED972C3615F2D0A0006C8165 /* LoadingBackground@2x.png */,
 			);
 			name = "The Files You Want";
 			sourceTree = "<group>";
@@ -174,8 +168,6 @@
 				ED972C1E15F2D06E006C8165 /* InfoPlist.strings in Resources */,
 				ED972C2A15F2D06E006C8165 /* ViewController_iPhone.xib in Resources */,
 				ED972C2D15F2D06E006C8165 /* ViewController_iPad.xib in Resources */,
-				ED972C3815F2D0A0006C8165 /* LoadingBackground.png in Resources */,
-				ED972C3915F2D0A0006C8165 /* LoadingBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +307,7 @@
 				ED972C3215F2D06E006C8165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
