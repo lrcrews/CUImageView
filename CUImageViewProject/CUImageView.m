@@ -114,7 +114,7 @@
         
         requestInProgress_ = YES;
         
-        [self.responseData resetBytesInRange:NSMakeRange(0, _responseData.length)];
+        _responseData= nil;
         
         if (urlConnection_)
         {
